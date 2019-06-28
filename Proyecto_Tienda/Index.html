@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="zapatillas Blas-For, ventas al mayor y menor">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Blas-For</title>
+		<link rel="icon" type="image/png" href="Imagenes/icono.png">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Serif|Open+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<link rel="stylesheet" type="text/css" href="js/fonts.css">
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.elevateZoom.min.js"></script>
+</head>
+<body class="hidden">
+	<i class="whatsapp" id="whatsapp"><a href="https://wa.me/981536902" target="_blank"><img src="Imagenes/whatsapp.png" width="41/"></a></i>
+	<header class="header" id="inicio">
+		<div class="container">
+			<div class="cont-menu">
+				<figure class="content-logo" >
+						<img src="Imagenes/logo.png"/>
+				</figure>
+				<div class="icono" id="open">
+                    <span class="bt-menu" id="menu_bar">&#9776;</span>   	<!--aBRIR-->
+       			  </div>
+       		 </div>
+			<nav class="menu">   			
+				<ol>
+					<li><a><strong>Ubicanos en:</strong></a></li>
+					<li><a href="https://web.whatsapp.com/" target="_blank"><img src="Imagenes/whatsapp.png"/>999-999-999 / 999-999-998</a></li>
+					<li><a href="hptts://www.facebook.com/" target="_blank"><img src="Imagenes/facebook.png"/>Blas-For</a></li>
+				</ol>
+			</nav>
+			<nav class="movil" id="movil"><!-- nav-->
+			<!-- Menu -->
+				<ul class="enlace" id="enlace">
+
+					<li class="submenu">
+						<a href="#"><span class="icon-location2"></span>Ubicanos<span class="caret icon-arrow-down6"></span>
+						</a>
+							<ul class="children">
+								<li><a href="https://es-la.facebook.com/" target="_blank"><span class="icon-facebook2"></span>Blas-For<span class="icon-dot"></span></a></li>
+								<li><a href="https://wa.me/981536902" target="_blank"><span class="icon-whatsapp"></span>999 999 999<span class="icon-dot"></span></a></li>
+							</ul>
+					</li>
+
+					<li><a href="#" id="enlace-inicio" class="btn-header"><span class="icon-home"></span>Inicio</a></li>
+					<li><a href="#bt-enlace-tutorial" id="enlace-tutorial" class="btn-header"><span class="icon-play"></span>Tutorial</a></li>
+					<li> <a href="#bt-enlace-venta" id="enlace-servicio" class="btn-header"><span class="icon-truck"></span>Area de Venta</a></li>
+
+					<li class="submenu">
+						<a href="#" ><span class="icon-cart"></span>Productos
+						</a>
+							<ul class="children">
+								<li> <a href="#bt-enlace-zapatillas" id="enlace-trabajo" class="btn-header"></span>Zapatillas<span class="icon-dot"></span></a></li>
+								<li><a href="#" id="enlace-productos" class="btn-header"></span>Pantalones<span class="icon-dot"></span></a></li>
+							</ul>
+					</li>
+				</ul>
+			
+			</nav>
+		</div>
+	</header>
+
+
+	<section class="hero">
+	<div class="container">
+		<!--<img src="2.png" width="100%">
+		<center><h1>Marca la diferencia con un estilo unico</h1></center>-->
+	</div>
+	</section>
+
+
+
+	<section class="seccion-venta" id="bt-enlace-venta">
+		<div class="container">
+				<h2 id="venta">Area de Ventas:</h2>
+				<article class="project">
+       			 		<div class="project-details">
+        						<div class="caja_formulario">
+										<form action="contacto.php" method="POST">
+										<h3>Datos de Entrega:</h3>
+										<div class="for-venta">					
+												<label class="letra-for" for="departamentos">Departamentos</label><br>
+												<select name="departamentos" id="departamentos">
+														<option value="Amazonas">Amazonas</option>
+														<option value="Ancash">Ancash</option>
+														<option value="Apurimac">Apurimac</option>
+														<option value="Arequipa">Arequipa</option>
+														<option value="Ayacucho">Ayacucho</option>
+														<option value="Cajamarca">Cajamarca</option>
+														<option value="Callao">Callao</option>
+														<option value="Huancavelica">Huancavelica</option>
+														<option value="Huanuco">Huanuco</option>
+														<option value="Ica">Ica</option>
+														<option value="Junin">Junin</option>
+														<option value="La Libertad">La Libertad</option>
+														<option value="Lambayeque">Lambayeque</option>
+														<option value="Lima" selected="">Lima</option>
+														<option value="Loreto">Loreto</option>
+														<option value="Madre De Dios">Madre De Dios</option>
+														<option value="Moquegua">Moquegua</option>
+														<option value="Pasco">Pasco</option>
+														<option value="Piura">Piura</option>
+														<option value="Puno">Puno</option>
+														<option value="San Martin">San Martin</option>
+														<option value="Tacna">Tacna</option>
+														<option value="Tumbes">Tumbes</option>
+														<option value="Ucayali">Ucayali</option>
+												</select><br>
+										</div>
+										<div class="for-venta">
+												<label class="letra-for" for="nombre">Nombre</label><br>
+												<input type="text" name="nombre" placeholder="Ingrese su Nombre" id="nombre"><br>
+										</div>
+										<div class="for-venta">
+												<label class="letra-for" for="telefono">Celular</label><br>
+												<input type="text" name="telefono" placeholder="Ingrese su celular" id="telefono"><br>
+										</div>
+												<input type="submit" value="enviar" >
+										</form>
+								</div>
+      	   				 </div>
+       			 		<div class="project-imageContainer">
+        					<div class="slide-contenedor">
+									<div class="miSlider fade">
+											<img src="Imagenes/destacado.png" width="500" />
+									</div>
+									<div class="miSlider fade">
+											<img src="Imagenes/Productos/zapatilla_1.jpg" width="500" />
+									</div>
+									<div class="miSlider fade">
+											<img src="Imagenes/Productos/zapatilla_2.jpg" width="500" />
+									</div>
+									<div class="direcciones">
+           									<a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+           			 						<a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+     		  			   			 </div>
+        							<div class="barras">
+         			 					  <span class="barra active" onclick="posicionSlide(1)"></span>
+        			  					  <span class="barra" onclick="posicionSlide(2)"></span>
+         			 					  <span class="barra" onclick="posicionSlide(3)"></span>
+       		   						 </div>
+							</div>
+     					</div>
+      			</article>
+    	</div>
+	</section>
+
+	<section class="contenedor">
+            <h3>Nuestro trabajo</h3>
+            <p class="after">Hacemos de algo diferente algo único</p>
+            <div class="botones-work">
+              	<ul>
+               	    	<li class="filter active" data-nombre='todos'>Todos</li>
+                  		<li class="filter" data-nombre='tutorial'>Tutorial</li>
+                	    <li class="filter" data-nombre='zapatilla'>Zapatillas</li>
+                    	<li class="filter" data-nombre='marketing'>Ropa</li>
+               	</ul>
+            </div>
+
+            <div class="galeria-work">
+                <section class="cont-work tutorial" id="bt-enlace-tutorial">
+                		<h2>Como comprar:</h2>
+                		<article class="project">
+                	 	   <div class="project-details">
+                	    			<img src="Imagenes/pensando.png" width="300" height="300" />
+                	    			<div class="boton-contacto">
+											<button><label for="telefono">Apunta tu <strong>CODIGO</strong> y <strong>CONTACTAME</strong><br>(Clic)</label></button>
+									</div>
+                			</div>	
+                			<div class="project-imageContainer">
+                				<video controls="" width="500">
+									<source src="Imagenes/tutorial.mp4" type="video/mp4">
+								</video>
+                			</div>
+                		</article>
+                </section>
+                  
+                                   
+                <section class="cont-work zapatilla" id="bt-enlace-zapatillas">           
+                		<h2>Zapatillas:</h2>
+                		<div class="contenedor_producto">
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_1.jpg" alt="Producto01" class="imagen" data="Imagenes/Productos/zapatilla_1.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-01</h4>
+											<p>S/40.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_2.jpg" alt="Producto02" class="imagen" data="Imagenes/Productos/zapatilla_2.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-02</h4>
+											<p>S/30.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_3.jpg" alt="Producto03" class="imagen" data="Imagenes/Productos/zapatilla_3.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/30.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_4.jpg" alt="Producto04" class="imagen" data="Imagenes/Productos/zapatilla_4.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/40.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_5.jpg" alt="Producto05" class="imagen" data="Imagenes/Productos/zapatilla_5.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/50.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_6.jpg" alt="Producto06" class="imagen" data="Imagenes/Productos/zapatilla_6.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/40.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_7.jpg" alt="Producto07" class="imagen" data="Imagenes/Productos/zapatilla_7.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/70.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_8.jpg" alt="Producto08" class="imagen" data="Imagenes/Productos/zapatilla_8.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/60.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_9.jpg" alt="Producto09" class="imagen" data="Imagenes/Productos/zapatilla_9.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/45.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_10.jpg" alt="Producto10" class="imagen" data="Imagenes/Productos/zapatilla_10.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/60.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_11.jpg" alt="Producto11" class="imagen" data="Imagenes/Productos/zapatilla_11.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/70.00</p>
+									</div>
+							</article>
+							<article class="caja_producto">
+									<div class="imagen_producto">
+											<img src="Imagenes/Productos/zapatilla_12.jpg" alt="Producto12" class="imagen" data="Imagenes/Productos/zapatilla_12.jpg"/><!--Imagen de zapatillas-->
+									</div>
+									<div class="texto_producto">
+											<h4>COD-03</h4>
+											<p>S/80.00</p>
+									</div>
+							</article>
+						</div>
+                </section>
+            </div>
+    </section>
+
+
+
+	<section class="contact" >
+      <div class="container">
+      	<div class="social">
+      		<article>
+          	<div class="logo_social">
+          		<img src="Imagenes/whatsapp.png" width="50" />
+          	</div>
+          	<div class="texto_social">
+          		<h4>Devoluciones</h4>
+				<p>Envio y Devoluciones(cambios) gratis</p>
+          	</div>
+          	</article>
+        </div>
+        <div class="social">
+        	<article>
+          	<div class="logo_social">
+          		<img src="Imagenes/whatsapp.png" width="50" />
+          	</div>
+          	<div class="texto_social">
+          		<h4>Entrega</h4>
+				<p>Entrega gratis en menos de un dia</p>
+          	</div>
+          	</article>
+        </div>
+        <div class="social">
+        	<article>
+          	<div class="logo_social">
+          		<img src="Imagenes/whatsapp.png" width="50" />
+          	</div>
+          	<div class="texto_social">
+          		<h4>01 999 999</h4>
+				<p>Llamanos y realiza tus compras</p>
+          	</div>
+          	</article>
+        </div>
+        <div class="social">
+        	<article>
+          	<div class="logo_social">
+          		<img src="Imagenes/whatsapp.png" width="50" />
+          	</div>
+          	<div class="texto_social">
+          		<h4>Tu opinion importa</h4>
+				<p>Dejanos tu comentario y sugerencias<br> para un mejor servicio</p>
+          	</div>
+          	</article>
+        </div>
+      </div>
+  </section>
+   <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Politica de Servicios </p>
+        </div>
+        <div>
+          <p>
+            Derechos Reservados <a href="https://twitter.com/thespianartist">@thespianartist</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+<script type="text/javascript" src="js/main.js"></script> 
+<script type="text/javascript" src="js/filtro.js"></script>
+</body>
+</html>
